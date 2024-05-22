@@ -21,7 +21,7 @@ public class Venda {
     private LocalDateTime dataVenda = LocalDateTime.now();
     private Double valor;
     @ManyToOne
-    //@JoinColumn(name = "id_vendedor", referencedColumnName = "id")
+    @JoinColumn(name = "id_vendedor", referencedColumnName = "id")
     private Vendedor vendedor;
 
     public Venda(double valor, Vendedor vendedor) {
