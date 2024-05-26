@@ -33,5 +33,4 @@ public class VendedorRepositoryTest {
         List<Vendedor> vendedor =	repository.findByNome(nomeVendedor);
         Assert.assertNotEquals(nomeVendedor, vendedor);
     }
-
 }
